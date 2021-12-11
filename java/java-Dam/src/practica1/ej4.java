@@ -9,6 +9,8 @@ public class ej4 {
         Scanner entrada2= new Scanner(System.in);
         System.out.print("Ingrese el segundo numero: ");
         float b= entrada2.nextFloat();
+entrada1.close();
+entrada2.close();
 
         if (a>b){
             System.out.println("El numero "+ a+ " es mayor que "+ b);

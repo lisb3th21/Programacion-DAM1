@@ -8,7 +8,7 @@ public class ej2 {
         System.out.println("Ingresa los grados Centigrados que deseas convertir: ");
         float centigrados= entrada.nextFloat();
         System.out.println(centigrados+" ºC son "+ (centigrados*(9f/5f)+32f)+ " ºF");
-
+entrada.close();
     }
     
 }

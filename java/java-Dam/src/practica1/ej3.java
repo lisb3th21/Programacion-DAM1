@@ -8,7 +8,7 @@ public class ej3 {
         Scanner entrada= new Scanner(System.in);
         System.out.println("Ingrese el numero que quiere analizar: ");
         int num= entrada.nextInt();
-
+entrada.close();
         if (num%2==0) {
             System.out.println("El número "+ num+" es par.");
 
@@ -16,6 +16,7 @@ public class ej3 {
         else{
             System.out.println("El número "+ num+" es impar");
         }
+
     }
 
 }

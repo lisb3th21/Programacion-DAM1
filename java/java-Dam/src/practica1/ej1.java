@@ -12,7 +12,9 @@ public class ej1 {
         int base = entrada.nextInt();
         System.out.println("Ingresa la altura: ");
         int altura= entrada1.nextInt();
-
+       
+entrada.close();
+entrada1.close();
         System.out.println("El área del triangulo es "+(base*altura)/2 );
         
 

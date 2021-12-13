@@ -1,4 +1,6 @@
 package practica3;
+import java.util.Scanner;
+
 //Pida al usuario 5 números y diga si estos estaban en orden decreciente, 	creciente o desordenados.
 public class ej2 {
     public static void main(String[] args) {
@@ -28,11 +30,20 @@ public class ej2 {
         System.out.println("ingrese un número: ");
         int num5= entrada5.nextInt();
 
-        if (num1>num2>num3>num4>num5){
+        entrada1.close();
+        entrada2.close();
+        entrada3.close();
+        entrada4.close();
+        entrada5.close();
+
+        if (num1>num2 && num2>num3 && num3>num4 && num4>num5){
             System.out.println("Los numeros estan ordenados de forma descendente");
         }
-        else if (num1<num2<num3<num4<num5){
+        else if ( num1<num2 && num2<num3 && num3<num4 && num4<num5){
             System.out.println("Los numeros estan ordenados de forma ascendente");
+        }
+        else{
+            System.out.println("Los numeros estan desordenados");
         }
 
     }

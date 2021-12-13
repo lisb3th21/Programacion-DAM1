@@ -44,6 +44,18 @@ public class ej1 {
             System.out.println("El numero "+num5+" es mayor");
         }
 
+        if (num1<=num2 && num1<=num3 && num1<=num4 && num1<=num5){
+            System.out.println("El numero "+num1+" es menor");
+        }else if(num2<=num1  && num2<=num3 && num2<=num4 && num2<=num5 ){
+            System.out.println("El numero "+num2+" es menor");
+        }else if(num3<=num1  && num3<=num2 && num3<=num4 && num3<=num5 ){
+            System.out.println("El numero "+num3+" es menor");
+        }else if(num4<=num1  && num4<=num2 && num4<=num3 && num4<=num5 ){
+            System.out.println("El numero "+num4+" es menor");
+        }else if(num5<=num1  && num5<=num2 && num5<=num3 && num5<=num4 ){
+            System.out.println("El numero "+num5+" es menor");
+        }
+
         entrada1.close();
         entrada2.close();
         entrada3.close();

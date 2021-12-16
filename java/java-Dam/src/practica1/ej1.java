@@ -6,15 +6,13 @@ public class ej1 {
         /*Programa para calcular el area de un triangulo*/
 
         Scanner entrada = new Scanner(System.in);
-        Scanner entrada1 = new Scanner(System.in);
 
         System.out.println("Ingresa la base: ");
-        int base = entrada.nextInt();
+        float base = entrada.nextFloat();
         System.out.println("Ingresa la altura: ");
-        int altura= entrada1.nextInt();
+        float altura= entrada.nextFloat();
        
 entrada.close();
-entrada1.close();
         System.out.println("El área del triangulo es "+(base*altura)/2 );
         
 

@@ -19,12 +19,10 @@ public class ej5 {
         System.out.println("Ingrese la altura del rectangulo:");
         int h= entrada1.nextInt();
 
-        Scanner entrada2=new Scanner(System.in);
         System.out.println("Ingrese la base del rectangulo:");
-        int b= entrada2.nextInt();
+        int b= entrada1.nextInt();
 
         entrada1.close();
-        entrada2.close();
         dibujo(h, b);
     }
 

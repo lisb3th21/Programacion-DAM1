@@ -1,5 +1,5 @@
 package practica4;
-
+//Crea un triangulo equilatero 
 import java.util.Scanner;
 
 public class ej8 {
@@ -18,6 +18,7 @@ public class ej8 {
         System.out.println("Ingrese el ancho del triángulo: ");
         int ancho= entrada1.nextInt();
         triangulo(ancho);
+        entrada1.close();
     }
 
     

@@ -16,5 +16,6 @@ public class ej6 {
         System.out.println("Ingrese la altura del triangulo: ");
         int altura= entrada1.nextInt();
         triangulo(altura);
+        entrada1.close();
     }
 }

@@ -17,12 +17,11 @@ public class ej3 {
         Scanner entrada1= new Scanner(System.in);
         System.out.println("Ingrese un número: ");
         int num1= entrada1.nextInt();
-        Scanner entrada2= new Scanner(System.in); 
         int num2;
          
         do{
             System.out.println("Ingrese un número mayor a "+ num1);
-            num2 = entrada2.nextInt();
+            num2 = entrada1.nextInt();
         }while (num1>num2);
 
         suma(num1, num2);

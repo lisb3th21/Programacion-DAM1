@@ -25,6 +25,6 @@ public class ej2 {
             }
         }while (!num.equalsIgnoreCase("salir"));
         input.close();
-        System.out.println("\n \n \n Los numeros que ha guardado son: \n"+listaNumeros);
+        System.out.println("\n ------------------\n \nLos numeros que ha guardado son: \n"+listaNumeros);
     }
 }

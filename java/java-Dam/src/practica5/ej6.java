@@ -13,7 +13,6 @@ public class ej6 {
         ArrayList<Integer> lista = new ArrayList<Integer>();
         // CREAMOS LOS OBJETOS INTEGER QUE UTILIZAREMOS :)
         int mininmo, maximo, numero;
-
         Scanner input = new Scanner(System.in);
         System.out.print("Ingrese un número: ");
         mininmo = input.nextInt();

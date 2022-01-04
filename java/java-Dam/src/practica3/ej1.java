@@ -7,29 +7,21 @@ public class ej1 {
     public static void main(String[] args) {
         
         Scanner entrada1=new Scanner(System.in);
-        
-        Scanner entrada2=new Scanner(System.in);
-        
-        Scanner entrada3=new Scanner(System.in);
-        
-        Scanner entrada4=new Scanner(System.in);
-        
-        Scanner entrada5=new Scanner(System.in);
 
         System.out.println("ingrese un número: ");
         int num1= entrada1.nextInt();
         
         System.out.println("ingrese un número: ");
-        int num2= entrada2.nextInt();
+        int num2= entrada1.nextInt();
 
         System.out.println("ingrese un número: ");
-        int num3= entrada3.nextInt();
+        int num3= entrada1.nextInt();
 
         System.out.println("ingrese un número: ");
-        int num4= entrada4.nextInt();
+        int num4= entrada1.nextInt();
 
         System.out.println("ingrese un número: ");
-        int num5= entrada5.nextInt();
+        int num5= entrada1.nextInt();
 
         //Pongo el igual por si el usuario ingresa dos numeros iguales, el programa no tendra un error 
         if (num1>=num2 && num1>=num3 && num1>=num4 && num1>=num5){
@@ -57,10 +49,6 @@ public class ej1 {
         }
 
         entrada1.close();
-        entrada2.close();
-        entrada3.close();
-        entrada4.close();
-        entrada5.close();
     }
     
 }

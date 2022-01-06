@@ -39,5 +39,6 @@ int longitud=lista.size();
             }
     }
     System.out.println("La suma tota es de "+total);
+    input.close();
 }
 }

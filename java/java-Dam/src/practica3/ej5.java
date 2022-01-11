@@ -48,6 +48,6 @@ public class ej5 {
             System.out.println("No podemor darle esa cantidad en mismos billetes");
         }
         
-
+entrada.close();
     }
 }

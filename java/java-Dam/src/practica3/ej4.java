@@ -31,5 +31,9 @@ public class ej4 {
         else{
             System.out.println("Los numeros "+ nume1+", "+ nume2+", "+nume3+" no son divisibles para "+ nume4);
         }
+        num1.close();
+        num2.close();
+        num3.close();
+        num4.close();
     }
 }

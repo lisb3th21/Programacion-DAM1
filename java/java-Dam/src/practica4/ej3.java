@@ -18,6 +18,7 @@ public class ej3 {
         System.out.println("Ingrese un número: ");
         int num1= entrada1.nextInt();
         int num2;
+        entrada1.close();
          
         do{
             System.out.println("Ingrese un número mayor a "+ num1);
@@ -26,5 +27,6 @@ public class ej3 {
 
         suma(num1, num2);
     }
+    
     
 }

@@ -10,6 +10,5 @@ public class ej1 {
     System.out.println("Bienvenido "+ nombre);
 
     
-    //String nombre= entrada.nextLine();
     }
 }

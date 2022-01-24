@@ -22,7 +22,7 @@ public class ej12 {
         System.out.println("Piensa en un número entre el "+minimo+" y "+maximo+". Yo intentare adivinarlo.\nIngresa MAYOR si me he pasado, ingresa MENOR si me he quedado corto e ingresa IGUAL y he acertado :) ");
         int intento=0;
         String respuesta="";
-        do{
+        /*do{
             while (intento>maximo || intento<minimo ){
                 double num= Math.random()*100;
                 numAdivinar=(int) num;
@@ -37,9 +37,24 @@ public class ej12 {
                 System.out.println("Lo he conseguido!!!!");
             }
         
-        }while(respuesta.equalsIgnoreCase("igual")==false);
+        }*/
+        System.out.println(respuesta.equalsIgnoreCase("igual"));
+        while(respuesta.equalsIgnoreCase("igual")==false){
+            while ( ( intento>maximo && intento<minimo)==true ){
+                double num= Math.random()*100;
+                numAdivinar=(int) num;
+            }
+            System.out.println("¿Es el número "+intento);
+            respuesta=input.nextLine();
+            if (respuesta.equalsIgnoreCase("mayor")){
+                minimo=intento;
+            }else if (respuesta.equalsIgnoreCase("menor")){
+                maximo=intento;
+            }else{
+                System.out.println("Lo he conseguido!!!!");
+        }
 
     }
     
-}
+}}
 

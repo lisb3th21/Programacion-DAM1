@@ -26,4 +26,4 @@ public class ej9{
         entrada.close();
         Rectangulo(base, altura);
     }
-}
+}         

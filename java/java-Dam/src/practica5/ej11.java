@@ -20,7 +20,7 @@ public class ej11 {
         String usuario=input.nextLine();
         System.out.println("Bienvenid@ "+usuario.toUpperCase() +"!\nEstoy pensando en un  número entre el 0 y el 100.\nIntenta adivinar el número en 6 intentos");
         int numAdivinar=numAdivinar();
-System.out.println(numAdivinar);
+//System.out.println(numAdivinar);
         while (intentos>0 && numAdivinar!=prueba){
             System.out.println("\nIngrese un numero del 0 al 100: ");
             prueba=input.nextInt();

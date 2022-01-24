@@ -12,7 +12,9 @@ public class ej10 {
         float nota = 0;
         Scanner input = new Scanner(System.in);
         String listaNotas = "";
-
+        ///prueba despues borrar
+        String prueba= new String();
+        ///
         do {
             System.out.println("Ingresa el nombre del alumno: ");
             alumno = input.nextLine();

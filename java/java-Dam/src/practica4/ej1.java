@@ -15,9 +15,9 @@ public class ej1 {
             resultado=resultado+(num); 
             
         }
-        System.out.println(resultado);
-            
+        System.out.println(resultado);       
     }
+
     //Creamos un metodo para numeros que se resten 
     static void retroceder(int inicio, int limite, int salto){
         String resultado="";
@@ -28,14 +28,10 @@ public class ej1 {
         System.out.println(resultado);
     }
     public static void main(String[] args) {
-
-        
         bucles(1, 1, 10);
         bucles(2, 2, 20);
         bucles(20, 2, 38);
         bucles(10, 4, 30);
         retroceder(40, 0, -5);
-        
-              
     }
 }

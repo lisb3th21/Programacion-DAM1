@@ -25,12 +25,15 @@ String fraseSin="";
             }
         }
         return fraseSin;
+
+        
     }
 public static void main(String[] args) {
     Scanner input=new Scanner(System.in);
     System.out.println("Ingresa la palabra que quieres analizar: ");
     String frase=input.nextLine();
     String fraseSin=sinEspacios(frase);
+    input.close();
 
 
     if (palindroma(fraseSin)){

@@ -21,6 +21,7 @@ public static void main(String[] args) {
     Scanner input=new Scanner(System.in);
     System.out.println("Ingresa la palabra que quieres analizar: ");
     String frase=input.next();
+    input.close();
     if (palindroma(frase.toLowerCase())){
         System.out.println("La palabra "+frase+" es palindorma o capicúa");
     }else{

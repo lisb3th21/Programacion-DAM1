@@ -112,6 +112,8 @@ public class Hotel {
 
         }
 
+        input.close();
+
     }
 
 

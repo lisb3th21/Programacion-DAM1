@@ -19,15 +19,12 @@ public class Vuelo {
     public Vuelo(){
         //Asigno el ID en los constructores y llamo al método que me incrementara el ID
         this(0, null, null);
-        this.id=incrementoId;
-        incrementoID();
-
     }
     //Constructor con parametros 
     public Vuelo (int pasajeros, String origen, String destino){
-        this.pasajeros=pasajeros;
-        this.origen=origen;
-        this.destino=destino;
+        this.setPasajeros(pasajeros);
+        this.setOrigen(origen);
+        this.setDestino(destino);;
         this.id=incrementoId;
         incrementoID();
 
@@ -40,7 +37,6 @@ public class Vuelo {
     public String getDestino(){return destino;}
     public static int getIncrementoID(){return incrementoId;} //para saber en que numero de id estamos
     //setters
-    public void setID(int id){this.id=id;}
     public void setPasajeros(int pasajero){this.pasajeros=pasajero;}
     public void setOrigen(String origen){this.origen=origen;}
     public void setDestino(String destino){this.destino=destino;}

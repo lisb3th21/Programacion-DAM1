@@ -23,13 +23,12 @@ public class Equipo {
 	//Constructors
 	
 	public Equipo () {
-		this("Desconocido",null);
-		
+		this.listaJugadores=new ArrayList<String>();
 	}
 	public Equipo(String nom,ArrayList<String> listaJugadores) {
-		this.listaJugadores = new ArrayList<>();
-		
-		this.nom = nom;
+		this.listaJugadores = new ArrayList<String>();
+		this.nom= new String();
+		this.setNom(nom);
 		this.listaJugadores = listaJugadores;
 	}
 	//toString

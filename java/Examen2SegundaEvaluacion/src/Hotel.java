@@ -79,6 +79,7 @@ public class Hotel {
         while (!salir){
             //menu
             System.out.println("============================================");
+            System.out.println("***************LUNA AZUL***************");
             System.out.println("SELECCIONE LAS OPERACIONES DEL MENÚ:");
             System.out.println("============================================");
             System.out.println("1. Reservar habitación");
@@ -115,8 +116,4 @@ public class Hotel {
         input.close();
 
     }
-
-
-
-
 }

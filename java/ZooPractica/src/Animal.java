@@ -21,7 +21,14 @@ abstract class Animal {
         this.peso=peso;}
     protected static void setNumeroAnimales(int numeroAnimales){Animal.numeroAnimales=numeroAnimales;}
 
+/*
 
+*/
+
+
+/*
+
+*/
 
     //Realizamos un método para que cada vez q creamos 1 animal, el cuntador sume 1
     public void incrementarAnimales(){

@@ -190,7 +190,7 @@ public class Libro {
 
     }
 
-    public static void eliminarLibro(ArrayList <Libro> listaLibros){
+    public static void eliminarLibro(ArrayList <Libro> listaLibros, ArrayList<Reserva> listaReservas){
         int posicion= bucarLibroISBN(listaLibros);
         Scanner input= new Scanner(System.in);
 

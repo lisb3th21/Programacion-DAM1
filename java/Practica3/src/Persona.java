@@ -63,18 +63,77 @@ public class Persona {
 
 
    
-    vpublic static void anadirPersona(ArrayList<Persona> lista){
+    public static void anadirPersona(ArrayList<Persona> lista){
         Scanner input = new Scanner(System.in);
         Persona persona= new Persona();
 
         System.out.println("Introduce el nombre");
         persona.setNombre(input.nextLine());
+
+        System.out.println("Ingrese el apelllidos: ");
+        persona.setApellidos(input.nextLine());
+
+        System.out.println("Ingrese el DNI:");
+        persona.setDni(input.nextLine());
+
+        System.out.println("Introduce la contraseña:");
+        persona.setContrasena(input.nextLine());
         
-
-
-
         lista.add(persona);
     }
 
+    public static int buscarPersonaDNI(ArrayList<Persona> lista){
+        int posicion=-1;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Ingresa el DNI de la persona que buscas:");
+        String dni= input.nextLine();
+
+        int i=0;
+        boolean encontrado=false;
+
+        while(!encontrado && i<lista.size()){
+            if(lista.get(i).getDni().equalsIgnoreCase(dni)){
+                encontrado=true;
+                posicion=i;
+            }i++;
+        }
+        if(!encontrado){
+            System.out.println("No se ha encontrado ningúna coincidencia.");
+        }
+
+        return posicion;
+    }
+
+    public static int buscarPersonaDNIaReserva(ArrayList<Reserva> lista){
+        Scanner input = new Scanner(System.in);
+        int posicion=-1;
+
+        System.out.println("Introduce el DNI a buscar:");
+        String dni=input.nextLine();
+
+        int i=0;
+        boolean encontrado= false;
+
+        while (!encontrado && i<lista.size()) {
+            if (lista.get(i).getPersona().getDni().equalsIgnoreCase(dni)) {
+                encontrado=true;
+                posicion=i;
+            }i++;
+        }
+
+        if(!encontrado){
+            System.out.println("No se ha encontrado ningúna coincidencia.");
+        }
+        return posicion;
+    }
+
+    public static void eliminarPersona(ArrayList<Persona> lista){
+        if(buscarPersonaDNI(lista)>-1){
+            lista.remove(buscarPersonaDNI(lista));
+        }else{
+            System.out.println("No se ha podido eliminar a la persona :'(");
+        }
+    }
     
 }

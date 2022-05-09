@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="java/Examen1SegundaEvaluacion/src"/>
+	<classpathentry kind="src" path="java/Examen2SegundaEvaluacion/src"/>
+	<classpathentry kind="src" path="java/examenGrupal/src"/>
+	<classpathentry kind="src" path="java/java-Dam/Practica3-4/src"/>
+	<classpathentry kind="src" path="java/java-Dam/src"/>
+	<classpathentry kind="src" path="java/ZooPractica/src"/>
+	<classpathentry kind="src" path="Prueba_base_datos/src/main/java"/>
+	<classpathentry kind="output" path="Prueba_base_datos/build/classes"/>
+</classpath>

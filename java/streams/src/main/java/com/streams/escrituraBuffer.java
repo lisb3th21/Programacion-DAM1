@@ -8,10 +8,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import oracle.jdbc.OracleDriver;
 
 
-public class ConexionOracle {
+
+public class escrituraBuffer {
 	
 	private static final String url="jdbc:oracle:thin:@localhost:1521/ORCLPDB1.localdomain";
 	private static final String user="sys as SYSDBA";
@@ -28,6 +28,8 @@ public class ConexionOracle {
 			ResultSet resulset = statement.executeQuery("Select product_name from products");
 
 			while (resulset.next()) {
+				int contador = 0; 
+				
 				writer.write(resulset.getString("product_name")+ "\n");
 			}
 			writer.close();
@@ -39,7 +41,7 @@ public class ConexionOracle {
 	}
 
 	public static void main(String[] args) {
-		ConexionOracle.imprimirselect();
+		imprimirselect();
 	}
 
 }

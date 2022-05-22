@@ -1,4 +1,4 @@
-package com.lisbeth;
+package com.streams;
 
 /**
  * Hello world!

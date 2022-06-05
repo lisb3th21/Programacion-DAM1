@@ -6,7 +6,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
-class Persona {
+class Persona implements Serializable {
     private String nombre;
     private String apellido;
     private int edad;
@@ -24,7 +24,7 @@ class Persona {
 
 }
 
-class Empleado extends Persona implements Serializable {
+class Empleado extends Persona {
     private String empresa;
     private float sueldo;
 
@@ -37,7 +37,7 @@ class Empleado extends Persona implements Serializable {
 
     @Override
     public String toString() {
-        return "Empleado [empresa=" + empresa + ", sueldo=" + sueldo + "]";
+        return "Empleado [empresa=" + empresa + ", sueldo=" + sueldo + super.toString()+ "]";
     }
 }
 
@@ -48,13 +48,15 @@ public class Serializando {
 
         personal[0] = new Empleado("Juan", "Llado", 23, "Brico", 2000);
         personal[1] = new Empleado("Luis", "Sanchex", 54, "Brico", 2000);
-        personal[1] = new Empleado("Rebeca", "Toala", 32, "Brico", 1500);
+        personal[2] = new Empleado("Rebeca", "Toala", 32, "Brico", 1500);
 
         try {
             ObjectOutputStream write = new ObjectOutputStream(new FileOutputStream("empleados.txt"));
             write.writeObject(personal);
             System.out.println();
+            
             write.close();
+
             ObjectInputStream read = new ObjectInputStream(new FileInputStream("empleados.txt"));
 
             Empleado[] recuperar = (Empleado[]) read.readObject();
